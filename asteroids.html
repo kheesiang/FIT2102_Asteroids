@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="asteroids.js"></script>
+    </head>
+    <body>
+        <h1>Asteroids</h1>
+        <h4>Use mouse to aim and shoot. Use keys W,A,S,D to move ship.</h4>
+        <h5>Levels increase after every 2000 points. Game will restart if ship collides with asteroids.</h5>
+        <p></p><font size = "6">SCORE:&nbsp;</font><span id="score", style="font-size: 35">00</span> 
+        <font size = "6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LEVEL:&nbsp;</font><span id="level", style="font-size: 35">1</span></p>
+        <svg id="canvas" width="600" height="600"/> 
+    </body>
+</html>
